@@ -10,18 +10,20 @@ import UIKit
 final class ViewController: UIViewController {
 
     
-    let name = "Меня зовут Влад."
+    let name: String = "Меня зовут Влад."
     let ageTitle = "Мне"
-    var ageCount = 17
+    var ageCount: Int = 17
     let ageWord = "лет."
     let height  = "Мой рост 180, Вес 68кг"
     let mouse = "Мышка Logitech, Цвет белый, весит"
-    var mouseWeight = 200
+    var mouseWeight: Int = 200
     let mouseGrams = "грамм."
     let headPh = "Беспрводные Наушники, Работают от одной зарядки"
-    var headPhTime = 6
+    var headPhTime: Int = 6
     let headPhWord = "часов."
-    let digMonitor = "Монитор Dell 24 дюйма, 60 герц"
+    let digMonitor: String = "Монитор Dell 24 дюйма, 60 герц"
+    
+
     
     lazy var me = "\(name) \(ageTitle) \(ageCount) \(ageWord) \(height)"
     lazy var mouseSetup = "\(mouse) \(mouseWeight) \(mouseGrams)"
