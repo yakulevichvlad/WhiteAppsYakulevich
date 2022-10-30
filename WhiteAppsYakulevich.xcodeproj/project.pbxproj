@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		E34A9392290ABF1D001B078D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3A9E4A5290F0ADF00B1F3A4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E3FD287A2909B28000ACEE3C /* WhiteAppsYakulevich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteAppsYakulevich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FD287D2909B28000ACEE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FD287F2909B28000ACEE3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		E3FD28712909B28000ACEE3C = {
 			isa = PBXGroup;
 			children = (
+				E3A9E4A5290F0ADF00B1F3A4 /* MyPlayground.playground */,
 				E3FD287C2909B28000ACEE3C /* WhiteAppsYakulevich */,
 				E3FD287B2909B28000ACEE3C /* Products */,
 			);
