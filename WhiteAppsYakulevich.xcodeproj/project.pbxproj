@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E34A9393290ABF1D001B078D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A9392290ABF1D001B078D /* ViewController.swift */; };
+		E3F515E62911171400DBE98C /* ViewControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F515E52911171400DBE98C /* ViewControllerNew.swift */; };
 		E3FD287E2909B28000ACEE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FD287D2909B28000ACEE3C /* AppDelegate.swift */; };
 		E3FD28802909B28000ACEE3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FD287F2909B28000ACEE3C /* SceneDelegate.swift */; };
 		E3FD28852909B28000ACEE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FD28832909B28000ACEE3C /* Main.storyboard */; };
@@ -17,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E34A9392290ABF1D001B078D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3A9E4A5290F0ADF00B1F3A4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E3F515E52911171400DBE98C /* ViewControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNew.swift; sourceTree = "<group>"; };
 		E3FD287A2909B28000ACEE3C /* WhiteAppsYakulevich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteAppsYakulevich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FD287D2909B28000ACEE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FD287F2909B28000ACEE3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		E3FD28712909B28000ACEE3C = {
 			isa = PBXGroup;
 			children = (
-				E3A9E4A5290F0ADF00B1F3A4 /* MyPlayground.playground */,
 				E3FD287C2909B28000ACEE3C /* WhiteAppsYakulevich */,
 				E3FD287B2909B28000ACEE3C /* Products */,
 			);
@@ -61,6 +61,7 @@
 				E3FD287D2909B28000ACEE3C /* AppDelegate.swift */,
 				E3FD287F2909B28000ACEE3C /* SceneDelegate.swift */,
 				E34A9392290ABF1D001B078D /* ViewController.swift */,
+				E3F515E52911171400DBE98C /* ViewControllerNew.swift */,
 				E3FD28832909B28000ACEE3C /* Main.storyboard */,
 				E3FD28862909B28100ACEE3C /* Assets.xcassets */,
 				E3FD28882909B28100ACEE3C /* LaunchScreen.storyboard */,
@@ -143,6 +144,7 @@
 				E34A9393290ABF1D001B078D /* ViewController.swift in Sources */,
 				E3FD287E2909B28000ACEE3C /* AppDelegate.swift in Sources */,
 				E3FD28802909B28000ACEE3C /* SceneDelegate.swift in Sources */,
+				E3F515E62911171400DBE98C /* ViewControllerNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

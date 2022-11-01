@@ -1,4 +1,0 @@
-import UIKit
-
-let a = (2+2) == (2*2)
-print(a)
