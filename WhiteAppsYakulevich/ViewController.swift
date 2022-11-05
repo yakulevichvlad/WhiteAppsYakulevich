@@ -1,24 +1,21 @@
 import UIKit
 
-class NumberCounter {
+class ViewController: UIViewController {
     
-    var totalNumber: Double = 0 {
-        willSet(newTotalNumber) {
-            print("Вот-вот значение будет равно \(newTotalNumber)")
-        }
-        didSet {
-            if totalNumber < 255  {
-                print(Double.random(in: 1..<255))
-            } else {
-                print("Число не входит в диапазон")
-            }
+    func greet(age: Int, name: String) -> String {
+        if age >= 18 {
+            return "Доступ разрешен для \(name), которое передали в функцию"
+        } else {
+            return "Доступ запрещен для \(name), которое передали в функцию"
         }
     }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(greet(age: 17, name: "Vlad"))
+        
+        
+    }
 }
-let numberCounter = NumberCounter()
-numberCounter.totalNumber = 256
-
-
-
-
-

@@ -1,10 +1,12 @@
 import UIKit
 
-class NumberCounter {
-    var totalNumber: Double = 0 {
+    var minValue = 0
+    var maxValue = 255 {
+    var newTotalNumber = Double.random(in: 0...1000)
         willSet(newTotalNumber) {
-            let newTotalNumber = Double.random(in: 1...500)
-            if newTotalNumber < 255  {
+            if newTotalNumber > Double(minValue)  {
+                print("Число входит в диапазон")
+            } else if newTotalNumber < Double(maxValue) {
                 print("Число входит в диапазон")
             } else {
                 print("Число не входит в диапазон")
@@ -15,7 +17,4 @@ class NumberCounter {
             
             }
         }
-    }
-let numberCounter = NumberCounter()
-numberCounter.totalNumber = 0
 
