@@ -1,53 +1,73 @@
-//
-//  ViewController.swift
-//  WhiteAppsYakulevich
-//
-//  Created by Vladislav Yakulevich on 27.10.22.
-//
-
 import UIKit
 
+// Предисловие: к нам пришел клиент - владелец бесконтактной мойки. У него есть приложение и он хочет добавить в него экран, на котором будут отображаться режимы мойки (эконом, стандарт, комфорт, полная). У каждого режима своя стоимость. Пользователь засовывает в купюроприемник n-ю сумму денег и выбирает режим мойки. Программа должна сравнить, хватает ли этих денег для мойки и если остается остаток, то сообщить об этом пользователю. Если денег не хватает, то так же сообщить об этом пользователю.
+
+// Подзадачей является создание нового типа - режим мойки, у которой есть стоимость. Необходимо реализовать проверку - хватает ли введенных пользователем денег на мойку выбранного режима и если хватает, то какой остаток остается.
+
+enum Mode {
+    case econom(Int)
+    case standart(Int)
+    case comfort(Int)
+    case full(Int)
+}
+
 final class ViewController: UIViewController {
-
     
-    let name: String = "Меня зовут Влад."
-    let ageTitle = "Мне"
-    var ageCount: Int = 17
-    let ageWord = "лет."
-    let height  = "Мой рост 180, Вес 68кг"
-    let mouse = "Мышка Logitech, Цвет белый, весит"
-    var mouseWeight: Int = 200
-    let mouseGrams = "грамм."
-    let headPh = "Беспрводные Наушники, Работают от одной зарядки"
-    var headPhTime: Int = 6
-    let headPhWord = "часов."
-    let digMonitor: String = "Монитор Dell 24 дюйма, 60 герц"
+    func diff(price: Int, mode: Mode, result: ((Int) -> Void)) -> Int {
+        switch mode {
+        case .comfort(let priceMode):
+            let diff = price - priceMode
+            result(diff)
+            return priceMode
+        case .econom(let priceMode):
+            let diff = price - priceMode
+            result(diff)
+            return priceMode
+        case .standart(let priceMode):
+            let diff = price - priceMode
+            result(diff)
+            return priceMode
+        case .full(let priceMode):
+            let diff = price - priceMode
+            result(diff)
+            return priceMode
+           
+            
+        }
+    }
     
-
     
-    lazy var me = "\(name) \(ageTitle) \(ageCount) \(ageWord) \(height)"
-    lazy var mouseSetup = "\(mouse) \(mouseWeight) \(mouseGrams)"
-    lazy var headPhTitle = "\(headPh) \(headPhTime) \(headPhWord)"
-    
-    
+    func find(price: Int) {
+        let modes: [Mode] = [
+            .full(500),
+            .comfort(400),
+            .standart(300),
+            .econom(200)
+        ]
+        
+        var result: Mode?
+        
+        
+        for mode in modes {
+            var diff: Int?
+            self.diff(price: price, mode: mode, result: { result in
+                diff = result
+            })
+                
+            
+            if diff == 0 {
+                result = mode
+                print("Вы выбрали \(mode)")
+                
+            } else {
+                print("Не хватает \(diff!) до \(mode)")
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(me)
-        print(mouseSetup)
-        print(headPhTitle)
-        print(digMonitor)
+        
+        find(price: 500)
     }
-    
-    
-
-  
-    }
-    
-    
-    
-
-
-
-
+}
